@@ -9,7 +9,7 @@ async function getData() {
     $(".tActive").text(data.active);
     $(".tDeaths").text(data.deaths);
     $(".tRecovered").text(data.recovered);
-    $(".tCritical").text(data.critical);
+    $(".tCritical").text(Math.round(((data.recovered * 100) / data.cases))  + "%");
     $('.tTodayCases').text(data.todayCases);
     $('.tTodayDeaths').text(data.todayDeaths);
     $('.tPersontage').text(Math.round(((data.deaths * 100) / data.cases))  + "%");
