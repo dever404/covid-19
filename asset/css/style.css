@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:300,400,500,700');
+
+body {
+	background-color:white;
+	font-family: 'Cairo', sans-serif !important;
+	font-size: 30px;
+	color: #fff;
+}
+a:hover{
+	cursor: pointer;
+}
+.chart {
+	width: 100%;
+	height: 450px;
+}
+
+.info a{
+	font-weight: bold;
+	color: black;
+}
+.info a:hover{
+	background: black;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
