@@ -24,7 +24,9 @@ a:hover{
 	text-decoration: none;
 	cursor: pointer;
 }
-
+.icn {
+	margin-bottom: 10px;
+}
 @media (max-width: 991.98px) { 
 	.card {
 		margin-bottom: 10px;
