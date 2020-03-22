@@ -24,3 +24,9 @@ a:hover{
 	text-decoration: none;
 	cursor: pointer;
 }
+
+@media (max-width: 991.98px) { 
+	.card {
+		margin-bottom: 10px;
+	}
+}
