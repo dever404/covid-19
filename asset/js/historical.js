@@ -5,9 +5,9 @@ async function getHestorical() {
         i=0;
     const   response = await fetch(api_url_hestori),
             data = await response.json(),
-            cases = data[63].timeline['cases'],
-            deaths = data[63].timeline['deaths'],
-            recovered = data[63].timeline['recovered'],
+            cases = data.timeline['cases'],
+            deaths = data.timeline['deaths'],
+            recovered = data.timeline['recovered'],
             count = Object.keys(cases).length;
 
     $.each( cases, function( key, value ) {
