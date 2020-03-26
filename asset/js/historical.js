@@ -1,4 +1,4 @@
-const api_url_hestori = 'https://corona.lmao.ninja/historical';
+const api_url_hestori = 'https://corona.lmao.ninja/v2/historical';
 	
 async function getHestorical() {
     var valChart = new Array();
