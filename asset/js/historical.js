@@ -4,16 +4,15 @@ async function getHestorical() {
     var valChart = new Array();
         i=0;
     const   response = await fetch(api_url_hestori),
-            data = await response.json(),
+            data = await response.json();
             cases = data.timeline['cases'],
             deaths = data.timeline['deaths'],
-            recovered = data.timeline['recovered'],
             count = Object.keys(cases).length;
 
     $.each( cases, function( key, value ) {
         if(cases[''+key+'']!=0) {
-            var col = "<tr><td>"+key+"</td><td>"+cases[''+key+'']+"</td><td>"+deaths[''+key+'']+"</td><td>"+recovered[''+key+'']+"</td></tr>";
-            valChart[i]=[key,parseInt(cases[key]),parseInt(deaths[key]),parseInt(recovered[key])];
+            var col = "<tr><td>"+key+"</td><td>"+cases[''+key+'']+"</td><td>"+deaths[''+key+'']+"</td>/tr>";
+            valChart[i]=[key,parseInt(cases[key]),parseInt(deaths[key])];
             $('.statistique').append(col);
             i++;
         }
@@ -31,7 +30,6 @@ async function getHestorical() {
     chartdata.addColumn('string', 'التاريخ');
     chartdata.addColumn('number', 'الحالات');
     chartdata.addColumn('number', 'الوفيات');
-    chartdata.addColumn('number', 'المتعافون');
 
       console.log(valChart);
       chartdata.addRows(valChart);
