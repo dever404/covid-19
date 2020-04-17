@@ -41,7 +41,7 @@ async function getHestorical() {
       height: '500px'
     };
 
-    var chart = new google.charts.Line(document.getElementById('linechart_material'));
+    var chart = new google.visualization.ColumnChart(document.getElementById('linechart_material'));
 
     chart.draw(chartdata, google.charts.Line.convertOptions(options));
   }
