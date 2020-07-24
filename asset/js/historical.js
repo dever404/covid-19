@@ -40,10 +40,14 @@ async function getHestorical() {
       width: '100%',
       height: '500px'
     };
+	  
+	var chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
+        chart.draw(chartdata, options);
+
 
     //var chart = new google.visualization.ColumnChart(document.getElementById('linechart_material'));
-    chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
-    chart.draw(chartdata, options); 
+    //chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
+    //chart.draw(chartdata, options); 
 
     //chart.draw(chartdata, google.charts.Line.convertOptions(options));
   }
