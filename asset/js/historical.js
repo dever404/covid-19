@@ -42,7 +42,7 @@ async function getHestorical() {
     };
 
     //var chart = new google.visualization.ColumnChart(document.getElementById('linechart_material'));
-    var chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
+    chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
     chart.draw(chartdata, options); 
 
     //chart.draw(chartdata, google.charts.Line.convertOptions(options));
