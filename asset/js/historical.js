@@ -31,7 +31,7 @@ async function getHestorical() {
     chartdata.addColumn('number', 'الحالات');
     chartdata.addColumn('number', 'الوفيات');
 
-      console.log(valChart);
+      //console.log(valChart);
       chartdata.addRows(valChart);
   
     
